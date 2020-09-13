@@ -2,6 +2,8 @@ The main file is "index.html" and the website must be started from there.
 
 **The Interactive Content doesn't work on GitHub since it's a .py file
 (GitHub Pages only host static content)
+**Some effects and images did not load previously when we tried, but
+they work when downloaded/available locally
 
 Each webpage (apart from the Interactive Content) will have a "GO BACK" at the
 top, from where the user can click and go back to the main menu.
