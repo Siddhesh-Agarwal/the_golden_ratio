@@ -1,0 +1,197 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+}
+
+p1 {
+      color: whitesmoke;
+}
+
+.btn {
+      position: relative;
+      width: 1100px;
+      background: rgb(27, 24, 24);
+      padding: 10px;
+      margin-top: 30px;
+      margin-left: 100px;
+      margin-right: 70px;
+      display: inline-block;
+      text-transform: uppercase;
+      overflow: hidden;
+      border-radius: 5px;
+      transition: .35s;
+      text-decoration: none;
+      letter-spacing: 4px;
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+    }
+    
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px 10px rgba(255,255,255,.3),
+                  0 0 20px 30px rgba(255,255,255,.2),
+                  0 0 30px 30px rgba(255,255,255,.1);
+      transition-delay: 1s;
+      color: black;
+      background: yellowgreen;
+    }
+    
+    .btn span {
+      position: absolute;
+      display: block;
+    }
+    
+    .btn span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, white, blue);
+    }
+    
+    .btn:hover span:nth-child(1) {
+      left: 100%;
+      transition: 1s;
+    }
+    
+    .btn span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(270deg, white, blue);
+    }
+    
+    .btn:hover span:nth-child(3) {
+      right: 100%;
+      transition: 1s;
+      transition-delay: .5s;
+    }
+    
+    .btn span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, white, blue);
+    }
+    
+    .btn:hover span:nth-child(2) {
+      top: 100%;
+      transition: 1s;
+      transition-delay: .25s;
+    }
+    
+    .btn span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(0deg, white, blue);
+    }
+    
+    .btn:hover span:nth-child(4) {
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: .75s;
+    }
+    
+    .cd {
+      margin: 50px;
+      bottom: 0;
+      text-align: center;
+      background: whitesmoke;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
+    }
+    
+    .btn:active {
+      transition-delay: unset;
+      transition-duration: .25;
+      transform: scale(.95);
+    }
+
+body {
+      background: url(bg-ratio.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+p {
+      color: wheat;
+      font-size: 30px;
+      float: left;
+      font-family: 'Prompt', sans-serif;
+}
+
+.header h2 {
+      color: white;
+      margin: 50px;
+      text-align: center;
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 75px;
+}
+
+
+.whitespace {
+      height: 30px;
+}
+
+h1 {
+      font-family: "Monument Extended";
+      color: #f1Db61;
+}
+
+img {
+      width: 100%;
+}
+
+.txt {
+      position: relative;
+}
+
+.one {
+      margin-top: 100px;
+}
+
+.text-1 {
+      top: 160px;
+      left: -90px;
+}
+
+.text-2 {
+      z-index: 1;
+      top: 280px;
+      left: 280px;
+}
+
+.three {
+      z-index: 2;
+      top: -720px;
+      width: 120%;
+}
+
+.four {
+      margin-top: -400px;
+}
+
+.text-3 {
+      z-index: 1;
+      top: -140px;
+      left: -180px;
+}
+
+.text-4 {
+      z-index: 1;
+      top: 300px;
+      left: 300px;
+}
+
+.six {
+      top: -750px;
+}
