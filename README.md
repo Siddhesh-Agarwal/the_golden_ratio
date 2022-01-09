@@ -1,3 +1,6 @@
+# The golden ratio
+Submission for the hackbenchers #4 hackathon.
+
 The main file is "index.html" and the website must be started from there.
 
 **The Interactive Content doesn't work on GitHub since it's a .py file
