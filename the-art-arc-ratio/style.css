@@ -1,176 +1,92 @@
-.btn {
-  position: relative;
-  width: 1200px;
-  background: blueviolet;
-  padding: 10px;
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 70px;
-  display: inline-block;
-  text-transform: uppercase;
-  overflow: hidden;
-  border-radius: 5px;
-  transition: .35s;
-  text-decoration: none;
-  letter-spacing: 4px;
-  font-size: 24px;
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Oswald:wght@300&display=swap');
 
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px 10px rgba(255,255,255,.3),
-              0 0 20px 30px rgba(255,255,255,.2),
-              0 0 30px 30px rgba(255,255,255,.1);
-  transition-delay: 1s;
-  color: #61749e;
-  background: yellow;
-}
-
-.btn span {
-  position: absolute;
-  display: block;
-}
-
-.btn span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, rgb(255, 0, 0));
-}
-
-.btn:hover span:nth-child(1) {
-  left: 100%;
-  transition: 1s;
-}
-
-.btn span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(270deg, transparent, rgb(255, 0, 0));
-}
-
-.btn:hover span:nth-child(3) {
-  right: 100%;
-  transition: 1s;
-  transition-delay: .5s;
-}
-
-.btn span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(255, 0, 0));
-}
-
-.btn:hover span:nth-child(2) {
-  top: 100%;
-  transition: 1s;
-  transition-delay: .25s;
-}
-
-.btn span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(0deg, transparent, rgb(255, 0, 0));
-}
-
-.btn:hover span:nth-child(4) {
-  bottom: 100%;
-  transition: 1s;
-  transition-delay: .75s;
-}
-
-.cd {
-  margin: 50px;
-  bottom: 0;
-  text-align: center;
-  background: whitesmoke;
-  padding: 5px;
-  border-radius: 5px;
-  color: #aa0000;
-}
-
-.btn:active {
-  transition-delay: unset;
-  transition-duration: .25;
-  transform: scale(.95);
-}
-
-h3 {
-  color: whitesmoke;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  font-size: 40px;
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-background: url(img/bg.jpg) no-repeat 50% 50%;
-background-size: cover;
-background-attachment: fixed;
+    background: url(img/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn {
+    position: relative;
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin-top: 36px;
+    margin-inline: auto;
+    background: #8A2BE2;
+    padding: 12px;
+    border-radius: 15px;
+    color: #FFF;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 10px #ffffff4d,
+        0 0 20px 30px #ffffff33,
+        0 0 30px 30px #ffffff1a;
+    transition-delay: .1s;
+    color: #61749e;
+    background: #FF0;
+}
+
+.btn:active {
+    transition-delay: unset;
+    transition-duration: 0.25;
+    transform: scale(0.95);
 }
 
 .container {
-  background: transparent;
-  width: 100%;
+    background: transparent;
+    width: 98vw;
 }
 
-p {
-  color: whitesmoke;
-  font-size: 20px;
-  font-family: 'Prompt', sans-serif;
+.container h1, h2 {
+    color: #F0F0F0;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline solid #F0F0F0;
 }
 
-.section-dark {
-  background-color: transparent;
-  color:#ddd;
-  text-align: center;
-  height: 700px;
+.container h1 {font-size: 56px;}
+.container h2 {font-size: 40px;}
+
+.container p {
+    color: #f5f5f5;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: justify;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-inline: 5%
 }
 
-h2 {
-font-family: 'Amatic SC', cursive;
-color: whitesmoke;
-text-align: center;
+.container .parallax-window {
+    height: 800px;
+    width: 98vw;
+    margin: 0;
+    background: transparent;
 }
 
-.parallax-window {
-  height: 800px;
-  background: transparent;
+.container .parallax-window1 {
+    height: 370px;
+    max-width: 3210px;
+    background: transparent;
 }
 
-.container1 {
-background: transparent;
-width: 100%;
-text-align: center;
+.container .parallax-window2, .parallax-window3 {
+    height: 540px;
+    background: transparent;
 }
-
-.parallax-window1 {
-height: 370px;
-background: transparent;
-}
-
-.section-dark1 {
-background-color: transparent;
-color:#ddd;
-text-align: center;
-height: 825px;
-}
-
-.parallax-window2 {
-height: 500px;
-background: transparent;
-}
-
-.parallax-window3 {
-  height: 500px;
-  background: transparent;
-  }

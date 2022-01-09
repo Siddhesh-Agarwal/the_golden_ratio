@@ -1,99 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    
-    color: #FFFFFF;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    
-  }
- 
-   
-  body header {
+    color: #FFF;
+    overflow: hidden;
+    -webkit-tap-highlight-color: #ffffff00;
+}
+
+body header {
     background-color: transparent;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
     position: fixed;
     display: block;
     width: 100%;
     height: 48px;
     top: 0;
-    right: 0;
     left: 0;
     z-index: 90;
-  }
-  body header .header-inner {
+}
+
+body header .header-inner {
     padding: 12px 1.5%;
-  }
-   
-  body header .header-inner .logo {
+}
+
+body header .header-inner .logo {
     position: relative;
     display: inline;
-    width: auto;
-    height: auto;
     float: left;
-  }
-  body header .header-inner .logo a {
+}
+
+body header .header-inner .logo a {
     position: relative;
     display: inline;
-    width: auto;
-    height: auto;
-    color: #FFFFFF;
+    color: #FFF;
     outline: 0px none;
-    outline: 0px;
     text-decoration: none;
     transition: all 0.35s ease-in-out;
     text-transform: uppercase;
-  }
-  body header .header-inner .logo a:hover {
-    color: rgba(255, 255, 255, 0.45);
-  }
-  body header .header-inner .logo a span {
+}
+
+body header .header-inner .logo a:hover {
+    color: #ffffff73;
+}
+
+body header .header-inner .logo a span {
     font-weight: 700;
-  }
-  body header .header-inner nav {
+}
+
+body header .header-inner nav {
     position: relative;
     display: inline;
     margin: 0;
     padding: 0;
-    list-type-style: none;
+    list-style-type: none;
     float: right;
-  }
-  body header .header-inner nav li {
+}
+body header .header-inner nav li {
     position: relative;
     display: inline;
     margin-left: 16px;
-  }
- 
-  body header .header-inner nav li a {
-   font-family: 'Oswald', sans-serif;
+}
+
+body header .header-inner nav li a {
+    font-family: 'Roboto Slab', serif;
     position: relative;
     font-size: 13px;
-    color: #FFFFFF;
+    color: #FFF;
     text-decoration: none;
     line-height: 24px;
     transition: all 0.35s ease-in-out;
-  }
-  
-  body header .header-inner nav li a span {
+}
+
+body header .header-inner nav li a span {
     position: relative;
     z-index: 2;
-  }
-  body header .header-inner nav li a:hover {
-    color: rgba(255, 255, 255, 0.45);
-  }
-  body section.slideshow {
+}
+
+body header .header-inner nav li a:hover {
+    color: #ffffff73;
+}
+
+body section.slideshow {
     position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     visibility: hidden;
     overflow: hidden;
-  }
-  body section.slideshow ul.navigation {
+}
+
+body section.slideshow ul.navigation {
     position: absolute;
     display: block;
     width: 640px;
@@ -104,9 +100,9 @@ body {
     top: 50%;
     margin-top: -320px;
     z-index: 10;
-  }
-  
-  body section.slideshow ul.navigation li.navigation-item {
+}
+
+body section.slideshow ul.navigation li.navigation-item {
     position: absolute;
     display: inline-block;
     overflow: hidden;
@@ -117,122 +113,111 @@ body {
     cursor: pointer;
     border-radius: 50%;
     transition: border 0.6s ease-in-out;
-  }
-  
-  body section.slideshow ul.navigation li.navigation-item .rotate-holder {
+}
+
+body section.slideshow ul.navigation li.navigation-item .rotate-holder {
     position: fixed;
     display: block;
     width: 0;
     height: 0;
     left: -9999px;
     top: -9999px;
-  }
-  body section.slideshow ul.navigation li.navigation-item .background-holder {
+}
+
+body section.slideshow ul.navigation li.navigation-item .background-holder {
     position: absolute;
     display: block;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: center center;
     background-size: cover;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
-  }
-  body section.slideshow ul.navigation li.navigation-item:hover .background-holder {
+}
+body section.slideshow ul.navigation li .navigation-item:hover .background-holder {
     opacity: 0.75;
-  }
-  body section.slideshow ul.navigation li.navigation-item.active .background-holder {
+}
+
+body section.slideshow ul.navigation li.navigation-item.active .background-holder {
     opacity: 0;
     visibility: hidden;
-  }
-  body section.slideshow .detail {
+}
+
+body section.slideshow .detail {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     z-index: 8;
-  }
-  body section.slideshow .detail .detail-item {
+}
+
+body section.slideshow .detail .detail-item {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
-  body section.slideshow .detail .detail-item .headline {
+}
+
+body section.slideshow .detail .detail-item .headline {
+    font-family: 'Roboto Slab', serif;
+    font-size: 64px;
+    line-height: 1.5;
+    height: 96px;
+    color: #00E;
+    -webkit-text-stroke: 1px #115;
     position: absolute;
-    display: block;
+    display: inline-block;
+    box-sizing: content-box;
     width: 100%;
     max-width: calc(100% - 480px);
-    height: 126px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: visible;
-    box-sizing: border-box;
     white-space: normal;
     z-index: 2;
-  }
- 
-  body section.slideshow .detail .detail-item .headline .letter {
-    font-family: 'Oswald', sans-serif;
-    position: relative;
-    display: inline-block;
-    font-size: 70px;
-    box-sizing: border-box;
-    white-space: normal;
-      text-transform: none;
-  }
-  
-  body section.slideshow .detail .detail-item .background {
+}
+
+body section.slideshow .detail .detail-item .background {
     position: absolute;
     display: block;
-    width: 100%;
     width: calc(100% + 100px);
-    height: 100%;
     height: calc(100% + 100px);
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     overflow: visible;
     background-repeat: no-repeat;
-    background-position: center center;     
+    background-position: center center;
     background-size: cover;
     z-index: 1;
-  }
-  body section.slideshow .detail .detail-item .background::before {
-    content: ""; 
-    background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 90%);   
+}
+
+body section.slideshow .detail .detail-item .background::before {
+    content: "";
+    background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 90%);
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     z-index: 2;
-      
-  }
-  body section.slideshow .detail .detail-item.active {
+}
+
+body section.slideshow .detail .detail-item.active {
     opacity: 1;
     visibility: visible;
-  }
-      
+}
