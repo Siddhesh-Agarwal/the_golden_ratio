@@ -86,7 +86,7 @@ body {
     background: transparent;
 }
 
-.container .parallax-window2, .parallax-window3 {
+.container.parallax-window2, .parallax-window3 {
     height: 540px;
     background: transparent;
 }

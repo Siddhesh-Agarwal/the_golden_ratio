@@ -4,6 +4,8 @@ body {
     color: #FFF;
     overflow: hidden;
     -webkit-tap-highlight-color: #ffffff00;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
 }
 
 body header {
