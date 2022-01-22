@@ -78,19 +78,8 @@ a {
     letter-spacing: 2px;
 }
 
-samp {
-	font-size: 20px;
-	margin-left: 1em;
-	opacity: 0.6;
-	line-height: 2;
-}
-
 a:hover, a:focus {
     -webkit-text-stroke: 1px #999;
-}
-
-.box {
-    background-color: #000;
 }
 
 h2 {
@@ -98,41 +87,19 @@ h2 {
     color: aqua;
     margin-top: 16px;
     margin-bottom: 32px;
-	text-decoration: underline solid;
 }
 
-.box1 {
+samp {
+	font-size: 20px;
+	margin-left: 1em;
+	opacity: 0.6;
+	line-height: 2;
+}
+
+.box, .box1, .box2, .box3 {
     background-color: #000;
 }
 
-.box1 h2 {
-    font-family: "Bitter", serif;
-    color: aqua;
-    margin-top: 12.5px;
-    margin-bottom: 30px;
-}
-
-.box2 {
-    background-color: #000;
-}
-
-.box2 h2 {
-    font-family: "Bitter", serif;
-    color: aqua;
-    margin-top: 8px;
-    margin-bottom: 20px;
-}
-
-.box3 {
-    background-color: #000;
-}
-
-.box3 h2 {
-    font-family: "Bitter", serif;
-    color: aqua;
-    margin-top: 8px;
-    margin-bottom: 25px;
-}
 
 @media screen and (min-width: 800px) {
     body > ratio {
